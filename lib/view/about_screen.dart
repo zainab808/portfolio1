@@ -17,6 +17,7 @@ class AboutScreen extends StatelessWidget {
                     width:  size.width*0.9,
                     color: Colors.grey[200],
                     child: Column(
+                      
                       children: [
                         Column(
                           children: [
