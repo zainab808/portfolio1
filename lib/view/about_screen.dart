@@ -9,14 +9,12 @@ class AboutScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return        Container(
-      
-
-       
+    
                     padding:   const EdgeInsets.only(top: 60,
                     left: 60,
                     right: 60),
-                    height:size.width<=1115?size.width<=472?size.height*2.9: size.height*3 :size.height*1.1,
-                    width: size.width<=1201?  size.width*0.9:size.width,
+                    height:size.width<=1115?size.width<=472?size.height*2.7: size.height*2.6 :size.height*1.1,
+                    width:  size.width*0.9,
                     color: Colors.grey[200],
                     child: Column(
                       children: [
