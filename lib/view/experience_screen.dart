@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 
 class ExperienceScreen extends StatelessWidget {
-  const ExperienceScreen();
+  const ExperienceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     final items = const [
       ExpItem('Weather App', 'Real-time weather with REST API'),
       ExpItem('ToDo App', 'Task manager with CRUD features'),
@@ -13,7 +15,7 @@ class ExperienceScreen extends StatelessWidget {
       ExpItem('Instagram UI Design', 'Responsive social UI'),
       ExpItem('Daraz App UI Design', 'E-commerce app UI design'),
     ];
-    Size size = MediaQuery.of(context).size;
+  
 
     return Container(
        padding:   const EdgeInsets.only(top: 20,
@@ -42,7 +44,7 @@ class ExperienceScreen extends StatelessWidget {
                           Text(
                             "Experience",
                             style: TextStyle(
-                                fontSize: 40,
+                                fontSize:  40,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black),
                           ),
