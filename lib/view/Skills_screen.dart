@@ -138,6 +138,9 @@ class SkillsScreen extends StatelessWidget {
                      
                                     ),
                                     Text("MVC Pattern",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=603?size.width<160?15: 20: 22:24,),)
+
+
+                                    
                                   ],
                      
                                  ),
