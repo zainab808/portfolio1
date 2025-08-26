@@ -315,7 +315,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
     return SingleChildScrollView(
       child: Container(
         padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
-        height: size.width < 390 ? size.height * 1.3 : size.height * 1.3,
+        height: size.width < 390 ? size.height * 2 : size.height * 1.3,
         width: size.width < 1100 * 1.3 ? size.width * 1.3 : size.height,
         decoration: BoxDecoration(
           color: Color(0xff01478C),
@@ -345,8 +345,8 @@ class _ProjectScreenState extends State<ProjectScreen> {
                       "Projects",
                       style: TextStyle(
                           fontSize: size.width < 540
-                              ? size.width < 390
-                                  ? 20
+                              ? size.width < 390?size.width < 203
+                                  ?10: 20
                                   : 30
                               : 40,
                           fontWeight: FontWeight.bold,
@@ -360,8 +360,9 @@ class _ProjectScreenState extends State<ProjectScreen> {
                       style: TextStyle(
                           color: Color(0xff1FF52D),
                           fontSize: size.width < 540
-                              ? size.width < 390
-                                  ? 20
+                              ? size.width < 390?size.width < 203
+                                  ?10: 
+                                  20
                                   : 30
                               : 40,
                           fontWeight: FontWeight.bold),

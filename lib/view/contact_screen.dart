@@ -220,6 +220,8 @@ class ContactScreen extends StatelessWidget {
                                   ),
 
                     const SizedBox(height: 10),
+
+                    if(size.width>170)
                     Align(
                       alignment: Alignment.centerRight,
                       child: InkWell(
@@ -234,6 +236,9 @@ class ContactScreen extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: const [
+                             
+                             
+                             
                               Text(
                                 "Submit",
                                 style: TextStyle(
@@ -252,6 +257,47 @@ class ContactScreen extends StatelessWidget {
                         ),
                       ),
                     ),
+                   if(size.width<170)
+                 
+                     Align(
+                      alignment: Alignment.centerRight,
+                      child: InkWell(
+                        onTap: () {},
+                        child: Expanded(
+                          child: Container(
+                            height: 60,
+                            width: 130,
+                            decoration: BoxDecoration(
+                              color: const Color(0xff0066CC),
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children:  [
+                               
+                               
+                               
+                                Text(
+                                  "Submit",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize:size.width<250?10: 20,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Icon(
+                                  Icons.send_rounded,
+                                  color: Colors.white,
+                                  size: 25,
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+      
+      
                   ],
                 ),
               ),

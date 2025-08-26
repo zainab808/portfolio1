@@ -8,11 +8,14 @@ class EducationScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return      Container(
-                  height:size.width<=840?size.height*2: size.height * 1.2,
+                  height:size.width<=840?size.height*2.7: size.height * 1.2,
                   width: size.width,
                   color: Colors.grey[200],
                   child: Column(
                     children: [
+
+
+                      if(size.width>195)
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -43,6 +46,39 @@ class EducationScreen extends StatelessWidget {
                           )
                         ],
                       ),
+        
+ if(size.width<195)
+              Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.grey[200],
+                            radius: 30,
+                            child: Image.asset("flower/cap.png"),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "My",
+                            style: TextStyle(
+                                fontSize:size.width<=407?20: 40,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            "Education",
+                            style: TextStyle(
+                                color: Color(0xff0066CC),
+                                fontSize: size.width<=407?20:40,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+        
                       SizedBox(
                         height: 40,
                       ),
@@ -59,7 +95,7 @@ size.width<=840?
                         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
-                            height:  440,
+                            height: size.width<225?600: 440,
                             width:size.width<=920?420: 460,
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -90,19 +126,36 @@ size.width<=840?
                                           Text("Matric",style: TextStyle(color: Color(0xff01478C),fontSize: 35,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
-                                    
+                                    if(size.width>390)
                                       Row(
                                         children: [
                                           Text("Hamayat-e-Islam Girls High School,Lahore",style: TextStyle(color: Colors.black,fontSize:size.width<=375?17: 20,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
+                              
+                              if(size.width<390)
+                              
+                                        Column(
+                                        children: [
+                                          Text("Hamayat-e-Islam Girls High School,Lahore",style: TextStyle(color: Colors.black,fontSize:size.width<=375?17: 20,fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
                                        SizedBox(height: 10,),
+
+                                       if(size.width>226)
                                       Row(
                                         children: [
                                           Text("2020-2022 | Completed",style: TextStyle(color: Color(0xff1E78D2),fontSize: 20,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
-                                  
+
+if(size.width<226)
+                                           Column(
+                                        children: [
+                                          Text("2020-2022 | Completed",style: TextStyle(color: Color(0xff1E78D2),fontSize: 20,fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                               
                                       
                                     ],
                                   ),
@@ -114,7 +167,7 @@ size.width<=840?
                         SizedBox(height: 50,),
                         
                           Container(
-                            height: 440,
+                            height: size.width<225?630:440,
                             width: size.width<=920?420:460,
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -138,21 +191,48 @@ size.width<=840?
                                   child: Column(
                                     
                                     children: [
-
+if(size.width>198)
                                       Row(
                                         children: [
                                           SizedBox(height: 20,),
                                           Text("ICS-Physics",style: TextStyle(color: Color(0xff01478C),fontSize: 35,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
-                                    
+if(size.width<198)
+
+                                       Column(
+                                        children: [
+                                          SizedBox(height: 20,),
+                                          Text("ICS-Physics",style: TextStyle(color: Color(0xff01478C),fontSize: 35,fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                               
+                               
+                                    if(size.width>243)
                                       Row(
                                         children: [
                                           Text("Punjab Group of Colleges",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
+                             if(size.width<243)
+                             
+                                   Column(
+                                        children: [
+                                          Text("Punjab Group of Colleges",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+                             
+                             
+                             
                                        SizedBox(height: 10,),
+                                       if(size.width>224)
                                       Row(
+                                        children: [
+                                          Text("2022-2024 | Completed",style: TextStyle(color: Color(0xff1E78D2),fontSize: 20,fontWeight: FontWeight.bold),),
+                                        ],
+                                      ),
+if(size.width<224)
+                                        Column(
                                         children: [
                                           Text("2022-2024 | Completed",style: TextStyle(color: Color(0xff1E78D2),fontSize: 20,fontWeight: FontWeight.bold),),
                                         ],

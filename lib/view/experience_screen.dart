@@ -18,23 +18,27 @@ class ExperienceScreen extends StatelessWidget {
   
 
     return Container(
-       padding:   const EdgeInsets.only(top: 20,
+       padding:   size.width<380?EdgeInsets.only(top: 20,
+                    left: 20,
+                    right: 10): EdgeInsets.only(top: 20,
                     left: 100,
                     right: 10),
-        height: size.height *0.9,
+        height:size.width<430?size.height*2: size.height *0.9,
                   width: size.width,
                   color: Colors.grey[200],
       child: Column(
         children: [
-          const Align(
+           Align(
             alignment: Alignment.centerLeft,
-            child:                 Row(
+            child: 
+            
+                            Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
                             backgroundColor: Color.fromARGB(255, 240, 240, 240),
                            
-                            radius: 30,
+                            radius: size.width<384?size.width<256?size.width<209?10: 20: 30: 40,
                             child: Icon(Icons.work_outline,size: 40,color: Color(0xff0066CC),),
                      
                           ),
@@ -44,7 +48,7 @@ class ExperienceScreen extends StatelessWidget {
                           Text(
                             "Experience",
                             style: TextStyle(
-                                fontSize:  40,
+                                fontSize: size.width<384?size.width<256?size.width<209?10: 20: 30: 40,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black),
                           ),

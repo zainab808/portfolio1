@@ -11,7 +11,7 @@ class SkillsScreen extends StatelessWidget {
                        padding:   const EdgeInsets.only(top: 40,
                     left: 60,
                     right: 60),
-                        height:size.width<=1115?size.height*2: size.height*0.7,
+                        height:size.width<=1115?size.height*2.3: size.height*0.7,
                         width: size.width,
                         decoration: BoxDecoration(
                           color: Color(0xff01478C),
@@ -19,27 +19,42 @@ class SkillsScreen extends StatelessWidget {
 
                         child: Column(
                          children: [
+                          if(size.width>228)
                          Row(mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.computer,size:size.width<=438?size.width<=373?25:30: 35,color: Colors.white,),
+                              Icon(Icons.computer,size:size.width<=438?size.width<=373?size.width<299?18:25:30: 35,color: Colors.white,),
                                SizedBox(width: 10,),
-                              Text("Skills &",style: TextStyle(fontSize:size.width<=438?size.width<=373?20:30: 40,fontWeight: FontWeight.bold,color: Colors.white),),
+                              Text("Skills &",style: TextStyle(fontSize:size.width<=438?size.width<=373?size.width<299?10: 20:30: 40,fontWeight: FontWeight.bold,color: Colors.white),),
                               SizedBox(width: 10,),
-                               Text("Abilities",style: TextStyle(color:Color(0xff1FF52D),fontSize: size.width<=438?size.width<=373?20: 30:40,fontWeight: FontWeight.bold),)
+                               Text("Abilities",style: TextStyle(color:Color(0xff1FF52D),fontSize: size.width<=438?size.width<=373?size.width<299?10:20: 30:40,fontWeight: FontWeight.bold),)
                             ],
                           ),
+                        
+                          if(size.width<228)
+                         Column(mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.computer,size:size.width<=438?size.width<=373?size.width<299?18:25:30: 35,color: Colors.white,),
+                               SizedBox(width: 10,),
+                              Text("Skills &",style: TextStyle(fontSize:size.width<=438?size.width<=373? 20:30: 40,fontWeight: FontWeight.bold,color: Colors.white),),
+                              SizedBox(width: 10,),
+                               Text("Abilities",style: TextStyle(color:Color(0xff1FF52D),fontSize: size.width<=438?size.width<=373?size.width<299?10:20: 30:40,fontWeight: FontWeight.bold),)
+                            ],
+                          ),
+                       
+                    
+                    
                           SizedBox(height: 20,),
                           Container(
-                              padding:   const EdgeInsets.only(top: 60,
-                    left: 50,
-                    // right: 30
-                    ),
+                    //           padding:   const EdgeInsets.only(top: 60,
+                    // left: 50,
+                    // // right: 30
+                    // ),
                             height: 
-                             size.width<=1115?size.height*1.8:
+                             size.width<=1115?size.height*1.9:
                              size. height*0.4,
                             width:
-                            size.width<=885?size.width*0.6:
-                             size.width*0.7,
+                            size.width<=885?size.width*0.5:
+                             size.width*0.6,
                            decoration: BoxDecoration( color: Color(0xff0066CC),borderRadius: BorderRadius.circular(10)),
                            child:
 
@@ -122,7 +137,7 @@ class SkillsScreen extends StatelessWidget {
                                       backgroundColor: Colors.white,
                      
                                     ),
-                                    Text("MVC Pattern",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=603?20: 22:24,),)
+                                    Text("MVC Pattern",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=603?size.width<160?15: 20: 22:24,),)
                                   ],
                      
                                  ),
