@@ -160,7 +160,7 @@ class ExperienceScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                  if (size.width > 60)
+                  if (size.width > 61)   
                 CircleAvatar(
                   backgroundColor: const Color.fromARGB(255, 240, 240, 240),
                   radius: size.width < 384
