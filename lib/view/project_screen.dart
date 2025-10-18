@@ -315,7 +315,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
     return SingleChildScrollView(
       child: Container(
         padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
-        height: size.width < 390 ? size.height * 5 : size.height * 1.3,
+        height: size.width < 390 ? size.width < 390 ? size.height * 4.7:size.height * 2 : size.height * 1.7,
         width: size.width < 1100 * 1.3 ? size.width * 1.3 : size.height,
         decoration: BoxDecoration(
           color: Color(0xff01478C),

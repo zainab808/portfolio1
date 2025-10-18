@@ -53,8 +53,8 @@ class SkillsScreen extends StatelessWidget {
                              size.width<=1115? size.width<=165? size.height*3  :size.height*1.9:
                              size. height*0.4,
                             width:
-                            size.width<=885?size.width*0.5:
-                             size.width*0.6,
+                            size.width<=1075? size.width<=885?size.width*0.6:size.width*0.7:
+                             size.width*0.7,
                            decoration: BoxDecoration( color: Color(0xff0066CC),borderRadius: BorderRadius.circular(10)),
                            child:
 
@@ -137,7 +137,7 @@ class SkillsScreen extends StatelessWidget {
                                       backgroundColor: Colors.white,
                      
                                     ),
-                                    Text("MVC Pattern",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=603?size.width<160?15: 20: 22:24,),)
+                                    Text("MVC Patern",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=603?size.width<160?15: 20: 22:24,),)
 
 
                                     
@@ -172,7 +172,7 @@ class SkillsScreen extends StatelessWidget {
     :                       
                             Row(
                             children: [
-                              SizedBox(width: 40,),
+                              SizedBox(width: 80,),
                               InkWell(onTap: (){},
                                 child: Container(
                                  
@@ -187,7 +187,7 @@ class SkillsScreen extends StatelessWidget {
                                       backgroundColor: Colors.white,
                                 
                                     ),
-                                    Text("Flutter",style: TextStyle(color: Colors.black,fontSize:size.width<=898?20:  30,),)
+                                    Text("Flutter",style: TextStyle(color: Colors.black,fontSize:size.width<=898?20:  25,),)
                                   ],
                                 
                                  ),
@@ -207,7 +207,7 @@ class SkillsScreen extends StatelessWidget {
                                       backgroundColor: Colors.white,
                                 
                                     ),
-                                    Text("Github",style: TextStyle(color: Colors.black,fontSize:size.width<=898?20:  30,),)
+                                    Text("Github",style: TextStyle(color: Colors.black,fontSize:size.width<=898?20:  25,),)
                                   ],
                                 
                                  ),
@@ -246,7 +246,13 @@ class SkillsScreen extends StatelessWidget {
                                       backgroundColor: Colors.white,
                      
                                     ),
+
+
+                                    if(size.width>1097)
                                     Text("MVC Pattern",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=898?16: 20:24,),)
+                                  ,  if(size.width<1097)
+                                   Text("MVC",style: TextStyle(color: Colors.black,fontSize: size.width<=1115?size.width<=898?16: 20:24,),)
+                                  
                                   ],
                      
                                  ),
@@ -266,7 +272,7 @@ class SkillsScreen extends StatelessWidget {
                                       backgroundColor: Colors.white,
                      
                                     ),
-                                    Text("Rest API's",style: TextStyle(color: Colors.black,fontSize:size.width<=1115?20: 30,),)
+                                    Text("Rest API's",style: TextStyle(color: Colors.black,fontSize:size.width<=1115?20: 25,),)
                                   ],
                      
                                  ),

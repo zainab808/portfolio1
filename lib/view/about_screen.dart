@@ -222,14 +222,16 @@ class AboutScreen extends StatelessWidget {
                 : 60),
         height: size.width < 1115
             ? size.width < 794
+             ? size.width < 734
                 ? size.width < 469
                     ? size.width < 357
                     ? size.width < 170
                         ? size.height*5:size.height * 3.8
-                        : size.height * 3
-                    : size.height * 2.4
-                : size.height * 1.9
-            : size.height * 1.1,
+                        : size.height * 3.5
+                    : size.height * 2.8
+                     : size.height * 2.4
+                : size.height * 2.1
+            : size.height * 2,
         width: size.width,
         color: Colors.grey[200],
         child: Column(
