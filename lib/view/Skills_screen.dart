@@ -25,7 +25,7 @@ class SkillsScreen extends StatelessWidget {
                               Icon(Icons.computer,size:size.width<=438?size.width<=373?size.width<299?18:25:30: 35,color: Colors.white,),
                                SizedBox(width: 10,),
                               Text("Skills &",style: TextStyle(fontSize:size.width<=438?size.width<=373?size.width<299?10: 20:30: 40,fontWeight: FontWeight.bold,color: Colors.white),),
-                              SizedBox(width: 10,),
+                              SizedBox(width: 15,),
                                Text("Abilities",style: TextStyle(color:Color(0xff1FF52D),fontSize: size.width<=438?size.width<=373?size.width<299?10:20: 30:40,fontWeight: FontWeight.bold),)
                             ],
                           ),
