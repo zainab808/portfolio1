@@ -197,7 +197,7 @@ if(size.width>198)
                                         children: [
                                           SizedBox(height: 20,),
                                            if(size.width>118)
-                                          Text("ICS-Physics",style: TextStyle(color: Color(0xff01478C),fontSize: 35,fontWeight: FontWeight.bold),),
+                                          Text("ICS-Physics",style: TextStyle(color: Color(0xff01478C),fontSize: 34,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
 if(size.width<198)
