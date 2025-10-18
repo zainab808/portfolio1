@@ -18,6 +18,7 @@ class ContactScreen extends StatelessWidget {
           color: const Color(0xffE5ECFB),
           child: Column(
             children: [
+               if (size.width > 120)
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -32,7 +33,11 @@ class ContactScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                   Flexible(
-                    child: Text(
+                    
+                    child: 
+                   
+                    
+                    Text(
                       "Get in",
                       style: TextStyle(
                         fontSize: isMobile ? 28 : 40,
@@ -271,7 +276,12 @@ class ContactScreen extends StatelessWidget {
                               color: const Color(0xff0066CC),
                               borderRadius: BorderRadius.circular(5),
                             ),
-                            child: Row(
+                            
+                            child:
+                            
+                            
+                             Row(
+                              
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children:  [
                                
@@ -285,6 +295,7 @@ class ContactScreen extends StatelessWidget {
                                     color: Colors.white,
                                   ),
                                 ),
+                                 if (size.width > 137)
                                 Icon(
                                   Icons.send_rounded,
                                   color: Colors.white,

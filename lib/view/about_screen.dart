@@ -224,7 +224,8 @@ class AboutScreen extends StatelessWidget {
             ? size.width < 794
                 ? size.width < 469
                     ? size.width < 357
-                        ? size.height * 3.8
+                    ? size.width < 170
+                        ? size.height*5:size.height * 3.8
                         : size.height * 3
                     : size.height * 2.4
                 : size.height * 1.9
@@ -235,9 +236,11 @@ class AboutScreen extends StatelessWidget {
           children: [
             Column(
               children: [
+                 if (size.width > 110)
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    
                     Icon(
                       Icons.person,
                       size: 35,
@@ -245,6 +248,7 @@ class AboutScreen extends StatelessWidget {
                     SizedBox(
                       width: 10,
                     ),
+                    
                     Text(
                       "Aboout",
                       style: TextStyle(
@@ -314,6 +318,7 @@ class AboutScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                   if (size.width > 108)
                                   Text(
                                     "Flutter Developer",
                                     style: TextStyle(

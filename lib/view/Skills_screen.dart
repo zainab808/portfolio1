@@ -11,7 +11,7 @@ class SkillsScreen extends StatelessWidget {
                        padding:   const EdgeInsets.only(top: 40,
                     left: 60,
                     right: 60),
-                        height:size.width<=1115?size.height*2.3: size.height*0.7,
+                        height:size.width<=1115?size.width<=165? size.height*4 :size.height*2.3: size.height*0.7,
                         width: size.width,
                         decoration: BoxDecoration(
                           color: Color(0xff01478C),
@@ -50,7 +50,7 @@ class SkillsScreen extends StatelessWidget {
                     // // right: 30
                     // ),
                             height: 
-                             size.width<=1115?size.height*1.9:
+                             size.width<=1115? size.width<=165? size.height*3  :size.height*1.9:
                              size. height*0.4,
                             width:
                             size.width<=885?size.width*0.5:
@@ -67,7 +67,7 @@ class SkillsScreen extends StatelessWidget {
                               InkWell(onTap: (){},
                                 child: Container(
                                  
-                                height: size.width<=1115?size.height*0.3:size.height*0.2,
+                                height: size.width<=1115?size.width<=165?size.height*0.5:size.height*0.3:size.height*0.2,
                                   width: size.width<=1115?size.width*0.3:size.width*0.1,
                                  decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(5)),
                                  child: Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +87,7 @@ class SkillsScreen extends StatelessWidget {
                               SizedBox(height: 20,),          InkWell(
                                 onTap: (){},
                                 child: Container(
-                                   height: size.width<=1115?size.height*0.3:size.height*0.2,
+                                   height: size.width<=1115?size.width<=165?size.height*0.5:size.height*0.3:size.height*0.2,
                                   width: size.width<=1115?size.width*0.3:size.width*0.1,
                                  decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(5)),
                                  child: Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -107,7 +107,7 @@ class SkillsScreen extends StatelessWidget {
                    ,    SizedBox(height: 20,),              InkWell(onTap: (){},
                      child: Container(
                                  
-                                  height: size.width<=1115?size.height*0.3:size.height*0.2,
+                                  height: size.width<=1115?size.width<=165?size.height*0.5:size.height*0.3:size.height*0.2,
                                   width: size.width<=1115?size.width*0.3:size.width*0.1,
                                  decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(5)),
                                  child: Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -126,7 +126,7 @@ class SkillsScreen extends StatelessWidget {
                    )
                    ,   SizedBox(height: 20,),              InkWell(onTap: (){},
                      child: Container(
-                                   height: size.width<=1115?size.height*0.3:size.height*0.2,
+                                   height: size.width<=1115?size.width<=165?size.height*0.5:size.height*0.3:size.height*0.2,
                                   width: size.width<=1115?size.width*0.3:size.width*0.1,
                                  decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(5)),
                                  child: Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -149,7 +149,7 @@ class SkillsScreen extends StatelessWidget {
                    ,    SizedBox(height: 20,),            InkWell(onTap: (){},
                      child: Container(
                                  
-                              height: size.width<=1115?size.height*0.3:size.height*0.2,
+                              height: size.width<=1115?size.width<=165?size.height*0.5:size.height*0.3:size.height*0.2,
                                   width: size.width<=1115?size.width*0.3:size.width*0.1,
                                  decoration: BoxDecoration( color: Colors.white,borderRadius: BorderRadius.circular(5)),
                                  child: Column(mainAxisAlignment: MainAxisAlignment.center,

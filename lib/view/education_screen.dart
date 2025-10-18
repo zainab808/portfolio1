@@ -8,7 +8,7 @@ class EducationScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return      Container(
-                  height:size.width<=840?size.height*2.7: size.height * 1.2,
+                  height:size.width<=840?size.width<=225?size.height*7:size.height*2.7: size.height * 1.2,
                   width: size.width,
                   color: Colors.grey[200],
                   child: Column(
@@ -95,7 +95,7 @@ size.width<=840?
                         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Container(
-                            height: size.width<225?600: 440,
+                            height: size.width<225?850: 440,
                             width:size.width<=920?420: 460,
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -104,7 +104,7 @@ size.width<=840?
                             
                               children: [
                                 Container(
-                                  height: 270,
+                                  height:270,
                                   width:size.width<=920?420: 460,
                                   decoration: BoxDecoration(
                                       color: Colors.white,
@@ -123,6 +123,7 @@ size.width<=840?
                                       Row(
                                         children: [
                                           SizedBox(height: 20,),
+                                           if(size.width>118)
                                           Text("Matric",style: TextStyle(color: Color(0xff01478C),fontSize: 35,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
@@ -167,7 +168,7 @@ if(size.width<226)
                         SizedBox(height: 50,),
                         
                           Container(
-                            height: size.width<225?630:440,
+                            height: size.width<225?1500:440,
                             width: size.width<=920?420:460,
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -195,6 +196,7 @@ if(size.width>198)
                                       Row(
                                         children: [
                                           SizedBox(height: 20,),
+                                           if(size.width>118)
                                           Text("ICS-Physics",style: TextStyle(color: Color(0xff01478C),fontSize: 35,fontWeight: FontWeight.bold),),
                                         ],
                                       ),
