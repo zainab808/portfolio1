@@ -610,7 +610,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                 ),
                               ),
                               Positioned(
-                                bottom: 20,
+                                bottom: 21,
                                 left: 20,
                                 child: Text(
                                   index == 0
